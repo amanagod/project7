@@ -9,8 +9,15 @@ animation(value);
 });
 }
 
-function sound(value){
-switch(value){
+document.addEventListener("keydown",function(event){
+ var element = event.key;
+sound(element);
+animation(element);
+}
+);
+
+function sound(velue){
+switch(velue){
 case "w":
 var w= new Audio("crash.png");
 w.play();
@@ -45,6 +52,13 @@ case "l":
 var l= new Audio("tom4.png");
 l.play();
 break;
-
 }
+}
+
+function animation (class){
+var ani= document.querySelector("."+class);
+ani.classList.add("pressed");
+setTimeout(function (){
+ani.classList.remove("pressed");
+},100);
 }
