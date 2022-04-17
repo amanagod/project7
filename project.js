@@ -19,37 +19,37 @@ animation(element);
 function sound(velue){
 switch(velue){
 case "w":
-var w= new Audio("crash.png");
+var w= new Audio("crash.mp3");
 w.play();
 break;
 
 case "a":
-var a= new Audio("kick.png");
+var a= new Audio("kick.mp3");
 a.play();
 break;
 
 case "s":
-var s= new Audio("snare.png");
+var s= new Audio("snare.mp3");
 s.play();
 break;
 
 case "d":
-var d= new Audio("tom1.png");
+var d= new Audio("tom1.mp3");
 d.play();
 break;
 
 case "j":
-var j= new Audio("tom2.png");
+var j= new Audio("tom2.mp3");
  j.play();
 break;
 
 case "k":
-var k = new Audio("tom3.png");
+var k = new Audio("tom3.mp3");
  k.play();
 break;
 
 case "l":
-var l= new Audio("tom4.png");
+var l= new Audio("tom4.mp3");
 l.play();
 break;
 }
